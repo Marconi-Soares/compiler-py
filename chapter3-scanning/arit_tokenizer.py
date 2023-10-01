@@ -9,7 +9,7 @@ CLOSING = '}])'
 ASSIGNMENT = '='
 
 
-class Parser:
+class Lexer:
     def __init__(self, source):
         self.source = [letter for letter in source]
         self.tokens = []
@@ -59,7 +59,7 @@ class Parser:
         return seq
 
 source = input('>>> ')
-p = Parser(source)
+p = Lexer(source)
 
 for token in p.tokens:
-    print(f"{token['type']}: {token['value']}")
+    print(f"{token['type']}") 
