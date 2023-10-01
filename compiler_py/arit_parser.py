@@ -1,4 +1,5 @@
-from wrt_log import write_log
+from wrt_log import TraceFile
+import errorcpl
 # from main import exit_error
 
 """
@@ -15,12 +16,14 @@ class Parser:
         self.token_ctr=0
         self.lexer = lexer
         self.look_ahead=code.splitlines()
-        write_log(self.look_ahead[self.token_ctr])
+        TraceFile.write_log(msg=str(self.look_ahead[self.token_ctr]), fnc="initparser")
         self.token_read= self.gettoken()
         self.parse_token()
 
     def match(self, expected):
-        if self.look_ahead[self.token_ctr]==expected:
+        TraceFile.write_log(msg=str(self.token_read)+" expected["+expected+"]", fnc="match")
+        # if self.look_ahead[self.token_ctr]==expected:
+        if self.token_read==expected:
             self.token_read = self.gettoken()
 
     def gettoken(self):
@@ -29,7 +32,7 @@ class Parser:
         return rsl
     
     def parse_token(self):
-        write_log(f"self.token_read[{self.token_read}] self.look_ahead[{self.look_ahead[self.token_ctr]}] ","parse_token" )
+        TraceFile.write_log(f"self.token_read[{self.token_read}] self.look_ahead[{self.look_ahead[self.token_ctr]}] ","parse_token" )
         if self.token_read == 'IDENTIFIER' and self.look_ahead[self.token_ctr] == 'ASGNMOP':
             self.asignment()
             exit(1)
@@ -50,11 +53,11 @@ class Parser:
         entry = self.lexer.symtab_lookup(self.token_read)
         if not entry:
             self.output+="Unexpected token" + {self.token_read}
-            exit_error(f'Unexpected token {self.token_read}')
+            errorcpl.exit_error(f'Unexpected token {self.token_read}')
         
         while (self.token_read == 'OPERATORS' and entry['CATEGORY'] == 'ADDOP'):
             readop = self.lexer.lex_tape[entry['INDEX']]
-            self.match('ADDOP')
+            self.match('OPERATORS')
             self.term()
             print(" " + readop)
             self.output+=" " + str(readop)
@@ -67,11 +70,11 @@ class Parser:
         self.factor()
         entry = self.lexer.symtab_lookup(self.token_read)
         if not entry:
-            exit_error(f'Unexpected token {self.token_read}')
+            errorcpl.exit_error(f'Unexpected token {self.token_read}')
         
         while (self.token_read == 'OPERATORS' and entry['CATEGORY'] == 'MULOP'):
             readop = self.lexer.lex_tape[entry['INDEX']]
-            self.match('MULOP')
+            self.match('OPERATORS')
             self.factor()
             print(" " + readop)
             self.output+=" " + str(readop)
@@ -95,7 +98,7 @@ class Parser:
             self.output+="CLOSING "
         else:
             self.output+='parse error token:' + str({self.token_read})
-            exit_error(f'parse error token: {self.token_read}')
+            errorcpl.exit_error(f'parse error token: {self.token_read}')
         return
     
     # asignment -> IDENTIFIER ASGNMOP expr

@@ -1,5 +1,5 @@
 from string import ascii_letters
-from wrt_log import write_log
+from wrt_log import TraceFile
 
 
 NUMBERS = '0123456789.'
@@ -23,6 +23,7 @@ LEX_LVL = 0
 
 class Lexer:
     def __init__(self, source):
+        TraceFile.write_log(source, 'Lexer __init__')
         self.source = [letter for letter in source]
         self.tokens = []
         self.char = ""
@@ -31,7 +32,6 @@ class Lexer:
 
         while len(self.source) > 0:
             self.char = self.source.pop(0)
-            write_log(self.char, 'INIT')
 
             if self.char in " ":
                 continue
@@ -114,7 +114,7 @@ class Lexer:
         self.lex_tape.append(token_value)
 
     def get_sequence(self, token_type):
-        write_log(self.char, 'get_sequence')
+        TraceFile.write_log(self.char, 'get_sequence')
         
         seq = self.char
 
@@ -135,7 +135,8 @@ class Lexer:
         return seq
     def symtab_lookup(self, token):
         for entry in self.symtab:
-            if token == entry['TYPE']:
+            TraceFile.write_log(msg=f"entry={entry}",fnc="symtab_lookup")
+            if token == entry['CATEGORY']:
                 return entry
         return False
         
