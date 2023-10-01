@@ -1,6 +1,5 @@
 from string import ascii_letters
 from wrt_log import write_log
-# from wrt_log import write_log
 
 
 NUMBERS = '0123456789.'
