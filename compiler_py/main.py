@@ -32,3 +32,6 @@ if __name__ == '__main__':
     lexer.generate_token_code()
     write_log(lexer.token_code, "__main__")
     parser = Parser(lexer.token_code, lexer)
+ 
+    with open(args.output, 'w') as fo:
+        contents = fo.write()
