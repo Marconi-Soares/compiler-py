@@ -133,7 +133,12 @@ class Lexer:
                 break
 
         return seq
-    
+    def symtab_lookup(self, token):
+        for entry in self.symtab:
+            if token == entry['TYPE']:
+                return entry
+        return False
+        
     def generate_token_code(self):
         self.token_code = ""
 

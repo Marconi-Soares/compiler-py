@@ -5,6 +5,10 @@ import sys
 import argparse
 
 # dbglevel = -1
+def exit_error(message):
+    write_log(message,"main")
+    print(f'{message} Aborting...')
+    exit(-1)
 
 if __name__ == '__main__':
     filename = ""
