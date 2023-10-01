@@ -1,5 +1,5 @@
-# from wrt_log import write_log
-from main import exit_error
+from wrt_log import write_log
+# from main import exit_error
 
 """
 asignment -> IDENTIFIER ASGNMOP expr
@@ -15,6 +15,7 @@ class Parser:
         self.token_ctr=0
         self.lexer = lexer
         self.look_ahead=code.splitlines()
+        write_log(self.look_ahead[self.token_ctr])
         self.token_read= self.gettoken()
         self.parse_token()
 
@@ -23,8 +24,9 @@ class Parser:
             self.token_read = self.gettoken()
 
     def gettoken(self):
-        self.token_read = self.look_ahead[self.token_ctr]
+        rsl = self.look_ahead[self.token_ctr]
         self.token_ctr+=1
+        return rsl
     
     def parse_token(self):
         write_log(f"self.token_read[{self.token_read}] self.look_ahead[{self.look_ahead[self.token_ctr]}] ","parse_token" )
@@ -55,7 +57,7 @@ class Parser:
             self.match('ADDOP')
             self.term()
             print(" " + readop)
-            self.output+=" " + readop
+            self.output+=" " + str(readop)
         return
 
     # term -> factor {MULOP factor}
@@ -72,7 +74,7 @@ class Parser:
             self.match('MULOP')
             self.factor()
             print(" " + readop)
-            self.output+=" " + readop
+            self.output+=" " + str(readop)
         return
     
     # factor -> IDENTIFIER | NUMBERS | '(' expr ')'
@@ -92,7 +94,7 @@ class Parser:
             self.match('CLOSING')
             self.output+="CLOSING "
         else:
-            self.output+='parse error token:' + {self.token_read}
+            self.output+='parse error token:' + str({self.token_read})
             exit_error(f'parse error token: {self.token_read}')
         return
     
