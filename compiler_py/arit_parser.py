@@ -16,7 +16,7 @@ class Parser:
         self.token_read= self.gettoken()
         self.parse_token()
 
-    def match(expected):
+    def match(self, expected):
         if self.look_ahead[self.token_ctr]==expected:
             self.token_read = self.gettoken()
 
