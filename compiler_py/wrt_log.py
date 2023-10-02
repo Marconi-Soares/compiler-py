@@ -3,10 +3,11 @@ from datetime import datetime
 
 class TraceFile:
     debuglvl = 7 # details  
+
     def __init__(self,dbglvl = None) -> None:
         if dbglvl:
             TraceFile.debuglvl= dbglvl or 7
-
+    
     def write_log(msg, fnc=""):
         # if dbglevel == -1:
             # return

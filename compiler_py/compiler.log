@@ -50,3 +50,1242 @@ NUMBERS
 [2023-10-01 18:30:52.785832]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
 [2023-10-01 18:30:52.786831]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
 [2023-10-01 18:30:52.786831]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:37:59.192884]Lexer __init__: a = 1 + 1
+
+[2023-10-01 18:37:59.192967]get_sequence: a
+[2023-10-01 18:37:59.193004]get_sequence: 1
+[2023-10-01 18:37:59.193045]get_sequence: 1
+[2023-10-01 18:37:59.193084]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:37:59.193122]initparser: IDENTIFIER
+[2023-10-01 18:37:59.193152]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:37:59.193189]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:37:59.193273]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:37:59.193330]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:37:59.193380]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:37:59.193422]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:37:59.193466]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:37:59.193523]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:37:59.193563]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:37:59.193600]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:37:59.193643]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:37:59.193679]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:38:39.110204]Lexer __init__: a = 1 + 1
+
+[2023-10-01 18:38:39.110267]get_sequence: a
+[2023-10-01 18:38:39.110295]get_sequence: 1
+[2023-10-01 18:38:39.110321]get_sequence: 1
+[2023-10-01 18:38:39.110350]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:38:39.110375]initparser: IDENTIFIER
+[2023-10-01 18:38:39.110398]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:38:39.110420]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:38:39.110441]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:38:39.110484]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:38:39.110517]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:38:39.110549]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:38:39.110583]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:38:39.110606]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:38:39.110629]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:38:39.110665]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:38:39.110690]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:38:39.110712]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:39:26.934499]Lexer __init__: a = 1 + 1
+
+[2023-10-01 18:39:26.934586]get_sequence: a
+[2023-10-01 18:39:26.934632]get_sequence: 1
+[2023-10-01 18:39:26.934670]get_sequence: 1
+[2023-10-01 18:39:26.934714]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:39:26.934752]initparser: IDENTIFIER
+[2023-10-01 18:39:26.934787]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:39:26.934823]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:39:26.934863]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:39:26.934922]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:39:26.934971]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:39:26.935006]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:39:26.935043]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:39:26.935073]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:39:26.935106]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:39:26.935136]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:39:26.935169]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:39:26.935200]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:41:31.573890]Lexer __init__: a = 1+2*4
+[2023-10-01 18:41:31.573995]get_sequence: a
+[2023-10-01 18:41:31.574042]get_sequence: 1
+[2023-10-01 18:41:31.574081]get_sequence: 2
+[2023-10-01 18:41:31.574120]get_sequence: 4
+[2023-10-01 18:41:31.574165]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:41:31.574203]initparser: IDENTIFIER
+[2023-10-01 18:41:31.574236]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:41:31.574290]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:41:31.574323]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:41:31.574381]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:41:31.574438]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:41:31.574473]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:41:31.574503]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:41:31.574537]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:41:31.574577]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:41:31.574609]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:41:31.574639]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:41:31.574672]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:41:42.659647]Lexer __init__: a = 1+2*4
+[2023-10-01 18:41:42.659840]get_sequence: a
+[2023-10-01 18:41:42.659907]get_sequence: 1
+[2023-10-01 18:41:42.659958]get_sequence: 2
+[2023-10-01 18:41:42.660001]get_sequence: 4
+[2023-10-01 18:41:42.660048]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:41:42.660217]initparser: IDENTIFIER
+[2023-10-01 18:41:42.660276]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:41:42.660318]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:41:42.660353]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:41:42.660408]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:41:42.660464]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:41:42.660504]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:41:42.660539]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:41:42.660576]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:41:42.660615]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:41:42.660650]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:41:42.660683]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:41:42.660719]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:42:35.606152]Lexer __init__: a = 1+2*4
+[2023-10-01 18:42:35.606255]get_sequence: a
+[2023-10-01 18:42:35.606300]get_sequence: 1
+[2023-10-01 18:42:35.606338]get_sequence: 2
+[2023-10-01 18:42:35.606376]get_sequence: 4
+[2023-10-01 18:42:35.606415]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:42:35.606456]initparser: IDENTIFIER
+[2023-10-01 18:42:35.606489]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:42:35.606521]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:42:35.606551]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:42:35.606620]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:42:35.606668]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:42:35.606703]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:42:35.606735]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:42:35.606766]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:42:35.606800]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:42:35.606831]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:42:35.606877]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:42:35.606909]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:43:17.429238]Lexer __init__: a = 1+2*4
+[2023-10-01 18:43:17.429318]get_sequence: a
+[2023-10-01 18:43:17.429362]get_sequence: 1
+[2023-10-01 18:43:17.429409]get_sequence: 2
+[2023-10-01 18:43:17.429473]get_sequence: 4
+[2023-10-01 18:43:17.429520]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:43:17.429564]initparser: IDENTIFIER
+[2023-10-01 18:43:17.429602]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:43:17.429635]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:43:17.429673]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:43:17.429737]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:43:17.429792]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:43:17.429828]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:43:17.429865]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:43:17.429899]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:43:17.429935]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:43:17.429972]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:43:17.430006]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:43:17.430045]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:44:11.022724]Lexer __init__: a = 1+2*4
+[2023-10-01 18:44:11.022804]get_sequence: a
+[2023-10-01 18:44:11.022839]get_sequence: 1
+[2023-10-01 18:44:11.022872]get_sequence: 2
+[2023-10-01 18:44:11.022905]get_sequence: 4
+[2023-10-01 18:44:11.022950]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:44:11.022998]initparser: IDENTIFIER
+[2023-10-01 18:44:11.023044]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:44:11.023087]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:44:11.023127]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:44:11.023192]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:44:11.023268]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:44:11.023304]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:44:11.023334]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:44:11.023358]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:44:11.023394]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:44:11.023425]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:44:11.023450]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:44:11.023473]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:44:17.042376]Lexer __init__: a = 1+2*4
+[2023-10-01 18:44:17.042664]get_sequence: a
+[2023-10-01 18:44:17.042986]get_sequence: 1
+[2023-10-01 18:44:17.043195]get_sequence: 2
+[2023-10-01 18:44:17.043345]get_sequence: 4
+[2023-10-01 18:44:17.043447]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:44:17.043550]initparser: IDENTIFIER
+[2023-10-01 18:44:17.043591]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:44:17.043634]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:44:17.043673]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:44:17.043733]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:44:17.043789]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:44:17.043840]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:44:17.043880]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:44:17.043919]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:44:17.043956]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:44:17.043995]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:44:17.044035]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:44:17.044074]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:44:32.014834]Lexer __init__: a = 1+2*4
+[2023-10-01 18:44:32.014907]get_sequence: a
+[2023-10-01 18:44:32.014937]get_sequence: 1
+[2023-10-01 18:44:32.014961]get_sequence: 2
+[2023-10-01 18:44:32.014986]get_sequence: 4
+[2023-10-01 18:44:32.015011]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:44:32.015036]initparser: IDENTIFIER
+[2023-10-01 18:44:32.015059]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:44:32.015090]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:44:32.015124]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:44:32.015200]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:44:32.015243]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:44:32.015268]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:44:32.015289]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:44:32.015309]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:44:32.015331]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:44:32.015351]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:44:32.015371]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:44:32.015390]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:44:33.126535]Lexer __init__: a = 1+2*4
+[2023-10-01 18:44:33.126630]get_sequence: a
+[2023-10-01 18:44:33.126681]get_sequence: 1
+[2023-10-01 18:44:33.126730]get_sequence: 2
+[2023-10-01 18:44:33.126769]get_sequence: 4
+[2023-10-01 18:44:33.126806]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:44:33.126849]initparser: IDENTIFIER
+[2023-10-01 18:44:33.126882]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:44:33.126915]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:44:33.126945]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:44:33.126998]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:44:33.127049]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:44:33.127092]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:44:33.127129]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:44:33.127154]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:44:33.127179]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:44:33.127202]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:44:33.127223]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:44:33.127244]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:44:34.693468]Lexer __init__: a = 1+2*4
+[2023-10-01 18:44:34.693575]get_sequence: a
+[2023-10-01 18:44:34.693649]get_sequence: 1
+[2023-10-01 18:44:34.693810]get_sequence: 2
+[2023-10-01 18:44:34.693844]get_sequence: 4
+[2023-10-01 18:44:34.693874]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:44:34.693906]initparser: IDENTIFIER
+[2023-10-01 18:44:34.693930]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:44:34.693953]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:44:34.693975]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:44:34.694023]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:44:34.694059]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:44:34.694083]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:44:34.694105]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:44:34.694126]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:44:34.694148]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:44:34.694170]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:44:34.694190]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:44:34.694212]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:44:39.851866]Lexer __init__: a = 1+2*4
+[2023-10-01 18:44:39.852103]get_sequence: a
+[2023-10-01 18:44:39.852181]get_sequence: 1
+[2023-10-01 18:44:39.852228]get_sequence: 2
+[2023-10-01 18:44:39.852270]get_sequence: 4
+[2023-10-01 18:44:39.852309]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:44:39.852358]initparser: IDENTIFIER
+[2023-10-01 18:44:39.852395]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:44:39.852426]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:44:39.852453]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:44:39.852505]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:44:39.852548]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:44:39.852581]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:44:39.852610]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:44:39.852637]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:44:39.852667]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:44:39.852694]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:44:39.852722]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:44:39.852747]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:46:05.981136]Lexer __init__: a = 1+2*4
+[2023-10-01 18:46:05.981336]get_sequence: a
+[2023-10-01 18:46:05.981379]get_sequence: 1
+[2023-10-01 18:46:05.981420]get_sequence: 2
+[2023-10-01 18:46:05.981472]get_sequence: 4
+[2023-10-01 18:46:05.981521]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:46:05.981569]initparser: IDENTIFIER
+[2023-10-01 18:46:05.981610]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:46:05.981647]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:46:05.981684]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:46:05.981756]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:46:05.981813]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:46:05.981860]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:46:05.981930]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:46:05.982120]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:46:05.982383]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:46:05.982512]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:46:05.982568]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:46:05.982625]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:46:07.260534]Lexer __init__: a = 1+2*4
+[2023-10-01 18:46:07.260641]get_sequence: a
+[2023-10-01 18:46:07.260682]get_sequence: 1
+[2023-10-01 18:46:07.260717]get_sequence: 2
+[2023-10-01 18:46:07.260750]get_sequence: 4
+[2023-10-01 18:46:07.260784]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:46:07.260818]initparser: IDENTIFIER
+[2023-10-01 18:46:07.260848]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:46:07.260878]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:46:07.260905]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:46:07.260955]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:46:07.260998]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:46:07.261028]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:46:07.261057]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:46:07.261085]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:46:07.261115]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:46:07.261143]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:46:07.261170]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:46:07.261197]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:46:12.472322]Lexer __init__: a = 1+2*4
+[2023-10-01 18:46:12.472401]get_sequence: a
+[2023-10-01 18:46:12.472447]get_sequence: 1
+[2023-10-01 18:46:12.472488]get_sequence: 2
+[2023-10-01 18:46:12.472530]get_sequence: 4
+[2023-10-01 18:46:12.472573]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:46:12.472620]initparser: IDENTIFIER
+[2023-10-01 18:46:12.472657]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:46:12.472696]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:46:12.472735]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:46:12.472820]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:46:12.472892]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:46:12.472936]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:46:12.472972]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:46:12.473010]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:46:12.473049]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:46:12.473089]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:46:12.473135]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:46:12.473175]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:46:13.409919]Lexer __init__: a = 1+2*4
+[2023-10-01 18:46:13.409998]get_sequence: a
+[2023-10-01 18:46:13.410040]get_sequence: 1
+[2023-10-01 18:46:13.410080]get_sequence: 2
+[2023-10-01 18:46:13.410107]get_sequence: 4
+[2023-10-01 18:46:13.410134]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:46:13.410175]initparser: IDENTIFIER
+[2023-10-01 18:46:13.410199]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:46:13.410222]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:46:13.410244]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:46:13.410287]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:46:13.410319]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:46:13.410342]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:46:13.410363]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:46:13.410384]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:46:13.410407]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:46:13.410427]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:46:13.410449]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:46:13.410469]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:46:14.164019]Lexer __init__: a = 1+2*4
+[2023-10-01 18:46:14.164100]get_sequence: a
+[2023-10-01 18:46:14.164144]get_sequence: 1
+[2023-10-01 18:46:14.164188]get_sequence: 2
+[2023-10-01 18:46:14.164239]get_sequence: 4
+[2023-10-01 18:46:14.164285]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:46:14.164327]initparser: IDENTIFIER
+[2023-10-01 18:46:14.164366]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:46:14.164409]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:46:14.164458]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:46:14.164605]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:46:14.164890]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:46:14.164987]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:46:14.165038]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:46:14.165081]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:46:14.165128]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:46:14.165162]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:46:14.165198]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:46:14.165234]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:48:29.015256]Lexer __init__: a = 1+2*4
+[2023-10-01 18:48:29.015365]get_sequence: a
+[2023-10-01 18:48:29.015419]get_sequence: 1
+[2023-10-01 18:48:29.015468]get_sequence: 2
+[2023-10-01 18:48:29.015514]get_sequence: 4
+[2023-10-01 18:48:29.015580]initparser: IDENTIFIER
+[2023-10-01 18:48:29.015625]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:48:29.015667]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:48:29.015707]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:48:29.015775]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:48:29.015836]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:48:29.015879]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:48:29.015921]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:48:29.015963]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:48:29.016007]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:48:29.016049]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:48:29.016103]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:48:29.016145]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:48:41.472670]Lexer __init__: a = 1+2*4
+[2023-10-01 18:48:41.472749]get_sequence: a
+[2023-10-01 18:48:41.472780]get_sequence: 1
+[2023-10-01 18:48:41.472808]get_sequence: 2
+[2023-10-01 18:48:41.472836]get_sequence: 4
+[2023-10-01 18:48:41.472877]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:48:41.472927]initparser: IDENTIFIER
+[2023-10-01 18:48:41.472972]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:48:41.473012]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:48:41.473052]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:48:41.473102]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:48:41.473151]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:48:41.473187]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:48:41.473222]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:48:41.473258]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:48:41.473297]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:48:41.473335]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:48:41.473369]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:48:41.473404]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:48:57.574713]Lexer __init__: a = 1+2*4
+[2023-10-01 18:48:57.574795]get_sequence: a
+[2023-10-01 18:48:57.574832]get_sequence: 1
+[2023-10-01 18:48:57.574949]get_sequence: 2
+[2023-10-01 18:48:57.575003]get_sequence: 4
+[2023-10-01 18:48:57.575081]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:48:57.575147]initparser: IDENTIFIER
+[2023-10-01 18:48:57.575180]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:48:57.575212]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:48:57.575241]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:48:57.575292]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:48:57.575335]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:48:57.575366]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:48:57.575395]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:48:57.575424]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:48:57.575454]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:48:57.575483]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:48:57.575512]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:48:57.575541]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:48:58.682812]Lexer __init__: a = 1+2*4
+[2023-10-01 18:48:58.682906]get_sequence: a
+[2023-10-01 18:48:58.682950]get_sequence: 1
+[2023-10-01 18:48:58.682990]get_sequence: 2
+[2023-10-01 18:48:58.683035]get_sequence: 4
+[2023-10-01 18:48:58.683112]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:48:58.683154]initparser: IDENTIFIER
+[2023-10-01 18:48:58.683178]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:48:58.683200]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:48:58.683222]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:48:58.683264]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:48:58.683295]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:48:58.683318]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:48:58.683339]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:48:58.683359]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:48:58.683380]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:48:58.683399]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:48:58.683419]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:48:58.683439]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:49:31.964838]Lexer __init__: a = 1+2*4
+[2023-10-01 18:49:31.964936]get_sequence: a
+[2023-10-01 18:49:31.964987]get_sequence: 1
+[2023-10-01 18:49:31.965034]get_sequence: 2
+[2023-10-01 18:49:31.965077]get_sequence: 4
+[2023-10-01 18:49:31.965125]initparser: IDENTIFIER
+[2023-10-01 18:49:31.965161]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:49:31.965195]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:49:31.965229]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:49:31.965293]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:49:31.965352]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:49:31.965395]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:49:31.965426]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:49:31.965493]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:49:31.965539]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:49:31.965577]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:49:31.965614]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:49:31.965653]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:57:20.530240]Lexer __init__: a = 1+2*4
+[2023-10-01 18:57:20.530309]get_sequence: a
+[2023-10-01 18:57:20.530338]get_sequence: 1
+[2023-10-01 18:57:20.530364]get_sequence: 2
+[2023-10-01 18:57:20.530389]get_sequence: 4
+[2023-10-01 18:57:20.530416]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:57:37.168857]Lexer __init__: a = 1+2*4
+[2023-10-01 18:57:37.168924]get_sequence: a
+[2023-10-01 18:57:37.168961]get_sequence: 1
+[2023-10-01 18:57:37.168988]get_sequence: 2
+[2023-10-01 18:57:37.169014]get_sequence: 4
+[2023-10-01 18:57:37.169053]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 18:57:37.169102]initparser: IDENTIFIER
+[2023-10-01 18:57:53.215753]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 18:58:24.672824]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 18:58:34.193061]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 18:58:34.753163]match: NUMBERS expected[NUMBERS]
+[2023-10-01 18:58:34.753276]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:58:34.753322]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:58:34.753364]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:58:34.753404]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 18:58:34.753464]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 18:58:34.753509]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 18:58:34.753559]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 18:58:34.753599]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:00:33.355833]Lexer __init__: a = 1+2*4
+[2023-10-01 19:00:33.355923]get_sequence: a
+[2023-10-01 19:00:33.355970]get_sequence: 1
+[2023-10-01 19:00:33.356021]get_sequence: 2
+[2023-10-01 19:00:33.356066]get_sequence: 4
+[2023-10-01 19:00:33.356192]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:00:33.356246]initparser: IDENTIFIER
+[2023-10-01 19:00:46.640925]Lexer __init__: a = 1+2*4
+[2023-10-01 19:00:46.641007]get_sequence: a
+[2023-10-01 19:00:46.641065]get_sequence: 1
+[2023-10-01 19:00:46.641112]get_sequence: 2
+[2023-10-01 19:00:46.641153]get_sequence: 4
+[2023-10-01 19:00:46.641200]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:00:46.641243]initparser: IDENTIFIER
+[2023-10-01 19:00:46.641282]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:00:46.641321]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:00:46.641357]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:00:46.641421]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:00:46.641486]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:00:46.641527]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:00:46.641568]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:00:46.641604]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:00:46.641645]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:00:46.641688]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:00:46.641728]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:00:46.641767]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:01:04.807588]Lexer __init__: a = 1+2*4
+[2023-10-01 19:01:04.807665]get_sequence: a
+[2023-10-01 19:01:04.807704]get_sequence: 1
+[2023-10-01 19:01:04.807739]get_sequence: 2
+[2023-10-01 19:01:04.807773]get_sequence: 4
+[2023-10-01 19:01:04.807810]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:01:04.807845]initparser: IDENTIFIER
+[2023-10-01 19:01:04.807875]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:01:04.807905]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:01:04.807933]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:01:04.807984]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:01:04.808023]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:01:04.808056]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:01:04.808094]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:01:04.808128]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:01:04.808173]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:01:04.808207]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:01:04.808237]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:01:04.808267]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:01:22.472210]Lexer __init__: a = 1+2*4
+[2023-10-01 19:01:22.472290]get_sequence: a
+[2023-10-01 19:01:22.472331]get_sequence: 1
+[2023-10-01 19:01:22.472377]get_sequence: 2
+[2023-10-01 19:01:22.472419]get_sequence: 4
+[2023-10-01 19:01:22.472461]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:01:22.472515]initparser: IDENTIFIER
+[2023-10-01 19:01:22.472553]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:01:22.472590]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:01:22.472626]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:01:22.472688]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:01:22.472739]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:01:22.472779]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:01:22.472816]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:01:22.472854]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:01:22.472895]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:01:22.472937]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:01:22.472982]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:01:22.473024]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:02:59.431108]Lexer __init__: a = 1+2*4
+[2023-10-01 19:02:59.431190]get_sequence: a
+[2023-10-01 19:02:59.431233]get_sequence: 1
+[2023-10-01 19:02:59.431274]get_sequence: 2
+[2023-10-01 19:02:59.431316]get_sequence: 4
+[2023-10-01 19:02:59.431361]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:02:59.431410]initparser: IDENTIFIER
+[2023-10-01 19:02:59.431453]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:02:59.431492]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:02:59.431531]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:02:59.431592]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:02:59.431724]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:02:59.431769]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:02:59.431812]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:02:59.431854]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:02:59.431882]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:02:59.431904]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:02:59.431924]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:02:59.431944]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:03:48.848981]Lexer __init__: a = 1+2*4
+[2023-10-01 19:03:48.849052]get_sequence: a
+[2023-10-01 19:03:48.849082]get_sequence: 1
+[2023-10-01 19:03:48.849108]get_sequence: 2
+[2023-10-01 19:03:48.849133]get_sequence: 4
+[2023-10-01 19:03:48.849160]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:03:48.849190]initparser: IDENTIFIER
+[2023-10-01 19:03:48.849213]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:03:48.849236]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:03:48.849257]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:03:48.849292]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:03:48.849324]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:03:48.849348]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:03:48.849369]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:03:48.849390]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:03:48.849412]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:03:48.849479]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:03:48.849505]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:03:48.849526]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:04:11.162705]Lexer __init__: a = 1+2*4
+[2023-10-01 19:04:11.162769]get_sequence: a
+[2023-10-01 19:04:11.162798]get_sequence: 1
+[2023-10-01 19:04:11.162824]get_sequence: 2
+[2023-10-01 19:04:11.162849]get_sequence: 4
+[2023-10-01 19:04:11.162876]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:04:11.162902]initparser: IDENTIFIER
+[2023-10-01 19:04:11.162925]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:04:11.162948]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:04:11.162970]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:04:11.163014]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:04:11.163064]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:04:11.163105]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:04:11.163145]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:04:11.163178]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:04:11.163216]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:04:11.163246]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:04:11.163276]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:04:11.163305]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:06:40.154153]Lexer __init__: a = 1+2*4
+[2023-10-01 19:06:40.154238]get_sequence: a
+[2023-10-01 19:06:40.154282]get_sequence: 1
+[2023-10-01 19:06:40.154326]get_sequence: 2
+[2023-10-01 19:06:40.154369]get_sequence: 4
+[2023-10-01 19:06:40.154415]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:06:40.154462]initparser: IDENTIFIER
+[2023-10-01 19:06:40.154501]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:06:40.154541]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:06:40.154579]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:06:40.154640]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:06:40.154692]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:06:40.154733]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:06:40.154772]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:06:40.154810]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:06:40.154851]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:06:40.154894]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:06:40.154933]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:06:40.154971]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:07:04.137520]Lexer __init__: a = 1+2*4
+[2023-10-01 19:07:04.137610]get_sequence: a
+[2023-10-01 19:07:04.137658]get_sequence: 1
+[2023-10-01 19:07:04.137707]get_sequence: 2
+[2023-10-01 19:07:04.137751]get_sequence: 4
+[2023-10-01 19:07:04.137796]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:07:04.137839]initparser: IDENTIFIER
+[2023-10-01 19:07:04.137878]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:07:04.137918]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:07:04.137972]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:07:04.138018]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:07:04.138067]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:07:04.138108]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:07:04.138139]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:07:04.138169]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:07:04.138199]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:07:04.138226]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:07:04.138252]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:07:04.138280]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:10:26.578252]Lexer __init__: a = 1+2*4
+[2023-10-01 19:10:26.578364]get_sequence: a
+[2023-10-01 19:10:26.578408]get_sequence: 1
+[2023-10-01 19:10:26.578450]get_sequence: 2
+[2023-10-01 19:10:26.578492]get_sequence: 4
+[2023-10-01 19:10:26.578535]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:10:26.578578]initparser: IDENTIFIER
+[2023-10-01 19:10:26.578617]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:10:26.578655]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:10:26.578693]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:10:26.578736]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:10:26.578781]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:10:26.578819]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:10:26.578857]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:10:26.578894]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:10:26.578937]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:10:26.578977]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:10:26.579015]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:10:26.579053]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:10:52.735561]Lexer __init__: a = 1+2*4
+[2023-10-01 19:10:52.735631]get_sequence: a
+[2023-10-01 19:10:52.735661]get_sequence: 1
+[2023-10-01 19:10:52.735688]get_sequence: 2
+[2023-10-01 19:10:52.735712]get_sequence: 4
+[2023-10-01 19:10:52.735738]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:10:52.735770]initparser: IDENTIFIER
+[2023-10-01 19:10:52.735793]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:10:52.735815]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:10:52.735852]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:10:52.735889]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:10:52.735921]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:10:52.735944]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:10:52.735965]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:10:52.735986]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:10:52.736008]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:10:52.736029]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:10:52.736051]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:10:52.736084]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:11:14.549717]Lexer __init__: a = 1+2*4
+[2023-10-01 19:11:14.549811]get_sequence: a
+[2023-10-01 19:11:14.549856]get_sequence: 1
+[2023-10-01 19:11:14.549901]get_sequence: 2
+[2023-10-01 19:11:14.549949]get_sequence: 4
+[2023-10-01 19:11:14.549996]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:11:14.550048]initparser: IDENTIFIER
+[2023-10-01 19:11:14.550090]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:11:14.550133]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:11:14.550174]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:11:14.550245]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:11:14.550310]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:11:14.550353]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:11:14.550411]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:11:14.550448]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:11:14.550618]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:11:14.550665]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:11:14.550703]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:11:14.550737]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:14:27.549343]Lexer __init__: a = 1+2*4
+[2023-10-01 19:14:27.549463]get_sequence: a
+[2023-10-01 19:14:27.549514]get_sequence: 1
+[2023-10-01 19:14:27.549553]get_sequence: 2
+[2023-10-01 19:14:27.549590]get_sequence: 4
+[2023-10-01 19:14:27.549630]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:14:27.549668]initparser: IDENTIFIER
+[2023-10-01 19:14:27.549704]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:14:27.549736]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:14:27.549767]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:14:27.549820]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:14:27.549880]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:14:27.549914]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:14:27.549944]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:14:27.549974]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:14:27.550019]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:14:27.550049]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:14:27.550080]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:14:27.550109]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:14:34.916693]Lexer __init__: a = 1+2*4
+[2023-10-01 19:14:34.916792]get_sequence: a
+[2023-10-01 19:14:34.916837]get_sequence: 1
+[2023-10-01 19:14:34.916876]get_sequence: 2
+[2023-10-01 19:14:34.916913]get_sequence: 4
+[2023-10-01 19:14:34.916951]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:14:34.916994]initparser: IDENTIFIER
+[2023-10-01 19:14:34.917027]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:14:34.917059]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:14:34.917089]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:14:34.917125]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:14:34.917165]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:14:34.917213]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:14:34.917245]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:14:34.917275]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:14:34.917311]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:14:34.917342]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:14:34.917374]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:14:34.917405]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:18:28.821045]Lexer __init__: a = 1+2*4
+[2023-10-01 19:18:28.821134]get_sequence: a
+[2023-10-01 19:18:28.821186]get_sequence: 1
+[2023-10-01 19:18:28.821234]get_sequence: 2
+[2023-10-01 19:18:28.821281]get_sequence: 4
+[2023-10-01 19:18:28.821338]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:18:28.821383]initparser: IDENTIFIER
+[2023-10-01 19:18:28.821417]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:18:28.821459]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:18:28.821487]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:18:28.821517]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:18:28.821548]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:18:28.821572]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:18:28.821598]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:18:28.821620]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:18:28.821641]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 4, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:18:28.821662]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 5, 'CATEGORY': 'OPERATORS', 'TYPE': 'MULOP'}
+[2023-10-01 19:18:28.821688]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:18:28.821710]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:18:28.821730]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:18:28.821760]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:20:05.807839]Lexer __init__: a = 1+2*4
+[2023-10-01 19:20:05.807911]get_sequence: a
+[2023-10-01 19:20:05.807955]get_sequence: 1
+[2023-10-01 19:20:05.807999]get_sequence: 2
+[2023-10-01 19:20:05.808042]get_sequence: 4
+[2023-10-01 19:20:05.808080]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:20:05.808119]initparser: IDENTIFIER
+[2023-10-01 19:20:05.808150]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:20:05.808180]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:20:05.808210]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:20:05.808243]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:20:05.808281]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:20:05.808311]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:20:05.808340]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:20:05.808369]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:20:05.808399]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 4, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:20:05.808428]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 5, 'CATEGORY': 'OPERATORS', 'TYPE': 'MULOP'}
+[2023-10-01 19:20:05.808460]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:20:05.808499]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:20:05.808531]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:20:05.808561]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:20:16.072597]Lexer __init__: a = 1+2*4
+[2023-10-01 19:20:16.072683]get_sequence: a
+[2023-10-01 19:20:16.072730]get_sequence: 1
+[2023-10-01 19:20:16.072791]get_sequence: 2
+[2023-10-01 19:20:16.072835]get_sequence: 4
+[2023-10-01 19:20:16.072880]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:20:16.072921]initparser: IDENTIFIER
+[2023-10-01 19:20:16.072958]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:20:16.073000]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:20:16.073039]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:20:16.073100]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:20:16.073150]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:20:16.073185]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:20:16.073222]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:20:16.073257]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:20:16.073299]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 4, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:20:16.073337]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 5, 'CATEGORY': 'OPERATORS', 'TYPE': 'MULOP'}
+[2023-10-01 19:20:16.073377]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:20:16.073415]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:20:16.073463]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:20:16.073503]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:21:05.362866]Lexer __init__: a = 1+2*4
+[2023-10-01 19:21:05.362954]get_sequence: a
+[2023-10-01 19:21:05.363001]get_sequence: 1
+[2023-10-01 19:21:05.363045]get_sequence: 2
+[2023-10-01 19:21:05.363088]get_sequence: 4
+[2023-10-01 19:21:05.363135]__main__: IDENTIFIER
+ASGNMOP
+NUMBERS
+OPERATORS
+NUMBERS
+OPERATORS
+NUMBERS
+
+[2023-10-01 19:21:05.363188]initparser: IDENTIFIER
+[2023-10-01 19:21:05.363229]parse_token: self.token_read[IDENTIFIER] self.look_ahead[ASGNMOP] 
+[2023-10-01 19:21:05.363270]match: IDENTIFIER expected[IDENTIFIER]
+[2023-10-01 19:21:05.363308]match: ASGNMOP expected[ASGNMOP]
+[2023-10-01 19:21:05.363377]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:21:05.363434]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 0, 'CATEGORY': 'IDENTIFIER', 'TYPE': None}
+[2023-10-01 19:21:05.363472]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 1, 'CATEGORY': 'ASGNMOP', 'TYPE': None}
+[2023-10-01 19:21:05.363508]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 2, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:21:05.363542]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 3, 'CATEGORY': 'OPERATORS', 'TYPE': 'ADDOP'}
+[2023-10-01 19:21:05.363683]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 4, 'CATEGORY': 'NUMBERS', 'TYPE': 'INT'}
+[2023-10-01 19:21:05.363726]symtab_lookup: entry={'LEX_LVL': 0, 'INDEX': 5, 'CATEGORY': 'OPERATORS', 'TYPE': 'MULOP'}
+[2023-10-01 19:21:05.363769]match: OPERATORS expected[OPERATORS]
+[2023-10-01 19:21:05.363810]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:21:05.363870]match: OPERATORS expected[OPERATORS]
+[2023-10-01 19:21:05.363907]match: NUMBERS expected[NUMBERS]
+[2023-10-01 19:59:43.334566]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 19:59:43.334694]get_sequence: B
+[2023-10-01 19:59:43.334903]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:01:22.884297]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:01:22.884398]get_sequence: B
+[2023-10-01 20:01:22.884463]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:01:29.994172]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:01:29.994258]get_sequence: B
+[2023-10-01 20:01:29.994301]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:02:18.647448]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:02:18.647555]get_sequence: B
+[2023-10-01 20:02:18.647605]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:02:38.144947]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:02:38.145077]get_sequence: B
+[2023-10-01 20:02:38.145133]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:02:38.971769]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:02:38.971847]get_sequence: B
+[2023-10-01 20:02:38.971877]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:02:49.955490]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:02:49.955564]get_sequence: B
+[2023-10-01 20:02:49.955594]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:02:51.005326]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:02:51.005420]get_sequence: B
+[2023-10-01 20:02:51.005473]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:03:54.471989]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:03:54.472098]get_sequence: B
+[2023-10-01 20:04:02.617944]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:04:02.618037]get_sequence: B
+[2023-10-01 20:05:33.832929]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:05:33.832993]get_sequence: B
+[2023-10-01 20:05:38.356102]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:05:38.356218]get_sequence: B
+[2023-10-01 20:05:49.463941]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:05:49.464044]get_sequence: B
+[2023-10-01 20:07:30.618574]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:07:55.995989]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:07:55.996061]get_sequence: B
+[2023-10-01 20:07:55.996091]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:08:09.494389]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:08:09.494490]get_sequence: B
+[2023-10-01 20:08:09.494542]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:08:10.702449]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:08:10.702533]get_sequence: B
+[2023-10-01 20:08:10.702587]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:08:11.479818]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:08:11.479916]get_sequence: B
+[2023-10-01 20:08:11.479968]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:08:11.964546]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:08:11.964640]get_sequence: B
+[2023-10-01 20:08:11.964696]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:08:22.233820]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:08:27.259069]get_sequence: B
+[2023-10-01 20:08:27.259159]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:08:29.456107]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:08:36.706676]get_sequence: B
+[2023-10-01 20:08:36.706776]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:09:01.227766]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:09:01.227861]get_sequence: B
+[2023-10-01 20:09:01.227905]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:10:28.893437]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:10:28.893709]get_sequence: B
+[2023-10-01 20:10:28.893834]: token mismatch: tokent = [BEGINP], char = [
+]
+[2023-10-01 20:11:03.383130]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
+[2023-10-01 20:11:03.383274]get_sequence: B
+[2023-10-01 20:11:03.383385]get_sequence: a
+[2023-10-01 20:11:03.383477]get_sequence: 1
+[2023-10-01 20:11:03.383529]: token mismatch: tokent = [0123456789.], char = [+]
+[2023-10-01 20:17:56.475197]Lexer __init__: BEGINP
+a = 1+2*4
+ENDP
+
