@@ -1,5 +1,6 @@
 lex.yy.c
 a.out
+*.log
 *.o
 __pycache__/
 compiler_py/lll
