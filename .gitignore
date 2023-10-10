@@ -4,3 +4,4 @@ a.out
 *.o
 __pycache__/
 compiler_py/lll
+transpiler_py/*.c
