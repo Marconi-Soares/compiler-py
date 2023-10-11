@@ -91,7 +91,21 @@ class Parser(Converter):
         return_type = self.convert_type()
 
         self.match(IDENTIFIER)
-        self.res += f'def {self.lexemes.pop(0)}'
+        function_identifier: str = self.lexemes.pop(0)
+
+        if function_identifier == "main":
+            self.res += 'if __name__ == "__main__":\n'
+            # python driver function does not suport params,
+            # here i'm throwing away "()"
+            self.match(OPEN)
+            self.lexemes.pop(0) # throw "(" away
+
+            self.match(CLOSE)
+            self.lexemes.pop(0) # throw ")" away
+
+            return self.block()
+
+        self.res += f'def {function_identifier}'
         self.match(OPEN)
         self.res += self.lexemes.pop(0)
         
