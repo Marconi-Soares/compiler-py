@@ -6,6 +6,7 @@ class Converter:
         self.current_identation: int
         self.res: str = ""
         self.lexemes: list[str] = []
+        self.look_ahead: list[int] = []
 
     def match(self, expected):
         raise NotImplementedError()
@@ -53,10 +54,32 @@ class Converter:
             string_body = string_body[0:-2]
             print_end = ""
 
+        self.match(CLOSE_STRING)
+        string_body += self.lexemes.pop(0)
+
+        if self.look_ahead[0] == SEPARATOR:
+            for placeholder in ["%d", "%s", "%c"]:
+                string_body = string_body.replace(placeholder, "{}")
+
+            string_body += ".format("
+
+            while self.look_ahead[0] == SEPARATOR:
+                self.match(SEPARATOR)
+                self.lexemes.pop(0) # throw "," away
+                self.match(IDENTIFIER)
+                string_body += self.lexemes.pop(0) +", "
+
+            string_body = string_body[0:-2] # Remove the last "," at the .format() method
+
+            string_body += ")"
+
         self.res += string_body
 
-        self.match(CLOSE_STRING)
-        self.res += self.lexemes.pop(0)
+        if self.look_ahead[0] == SEPARATOR:
+            self.match(SEPARATOR)
+            self.lexemes.pop(0)
+            self.match(IDENTIFIER)
+            print(self.lexemes.pop(0))
 
         self.res += print_end
 

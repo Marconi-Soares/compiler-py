@@ -33,6 +33,7 @@ class Lexer:
             self.identifier()
             self.opening()
             self.closing()
+            self.separator()
             self.block_start()
             self.end_instruction()
             self.block_end()
@@ -50,6 +51,12 @@ class Lexer:
 
             self.return_char()
             self.look_ahead.append(INCLUDE)
+
+    def separator(self):
+        if self.char == ',':
+            self.look_ahead.append(SEPARATOR)
+            self.lexemes.append(self.char)
+            self.get_char()
 
     def string(self):
         if self.char == '"':
