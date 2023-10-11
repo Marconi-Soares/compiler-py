@@ -75,7 +75,7 @@ class Lexer:
             self.lexemes.append(self.char)
 
     def is_type(self, lexeme):
-        if lexeme in ['int', 'string', 'void']:
+        if lexeme in ['int', 'char', 'void']:
             return True
 
     def end_instruction(self):

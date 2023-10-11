@@ -19,7 +19,7 @@ class Converter:
             case 'int':
                 return 'int'
 
-            case 'string':
+            case 'char':
                 return 'str'
 
             case 'void':
