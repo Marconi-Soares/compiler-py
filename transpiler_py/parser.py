@@ -117,6 +117,55 @@ class Parser(Converter):
         self.res += self.lexemes.pop(0) + f' -> {return_type}:\n'
         self.block()
 
+    def if_definition(self):
+        self.match(IF)
+
+        # if stmts should have a breakline before it
+        self.res += self.lexemes.pop(0)
+        
+        self.match(OPEN)
+        self.lexemes.pop(0) # Throw "(" away
+        self.res += " "
+
+        self.match(IDENTIFIER)
+        self.res += self.lexemes.pop(0)
+
+        self.match(COMPARISON)
+        self.res += f" {self.lexemes.pop(0)} "
+        
+        self.match(IDENTIFIER)
+        self.res += self.lexemes.pop(0)
+
+        self.match(CLOSE)
+        self.lexemes.pop(0) # Throw ")" away
+        self.res += ":\n" + "\t"*self.current_identation
+
+        if self.look_ahead[0] != BLOCK_OPEN:
+            self.res += "\t" # add an identation
+            self.instruction()
+            return
+
+        self.block()
+
+    def else_definition(self):
+        self.match(ELSE)
+        else_body = self.lexemes.pop(0)
+        
+        if self.look_ahead[0] == IF:
+            self.res += 'el'
+            self.if_definition()
+            return
+        
+        self.res += else_body + ":\n" + "\t"*self.current_identation
+
+        if self.look_ahead[0] != BLOCK_OPEN:
+            self.res += "\t" # add an identation
+            self.instruction()
+            return
+
+        self.block()
+
+
     def block(self):
         self.match(BLOCK_OPEN)
         self.lexemes.pop(0) # throw '{' away
@@ -129,11 +178,11 @@ class Parser(Converter):
         self.match(BLOCK_CLOSE)
         self.current_identation -= 1
         self.lexemes.pop(0) # throw '}' away
-        self.res += '\n'
+        self.res += '\n' + "\t"*self.current_identation
 
 
     def instructions(self):
-        while self.look_ahead[0] in [TYPE, IDENTIFIER]:
+        while self.look_ahead[0] in [TYPE, IDENTIFIER, IF, ELSE]:
             self.instruction()
 
     def instruction(self):
@@ -142,6 +191,12 @@ class Parser(Converter):
 
         elif self.look_ahead[0] == IDENTIFIER: 
             self.function_call()
+
+        elif self.look_ahead[0] == IF:
+            self.if_definition()
+
+        elif self.look_ahead[0] == ELSE:
+            self.else_definition()
 
     def param(self):
         param_type = None

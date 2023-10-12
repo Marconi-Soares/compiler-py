@@ -50,6 +50,8 @@ def main() -> None:
     lexer: Lexer = Lexer(input_file)
     lexer.tokenize()
     
+    print(lexer.lexemes)
+
     parser: Parser = Parser(lexer.lexemes, lexer.look_ahead)
     parser.parse()
 

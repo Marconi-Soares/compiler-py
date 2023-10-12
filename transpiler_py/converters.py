@@ -70,17 +70,9 @@ class Converter:
                 string_body += self.lexemes.pop(0) +", "
 
             string_body = string_body[0:-2] # Remove the last "," at the .format() method
-
             string_body += ")"
 
         self.res += string_body
-
-        if self.look_ahead[0] == SEPARATOR:
-            self.match(SEPARATOR)
-            self.lexemes.pop(0)
-            self.match(IDENTIFIER)
-            print(self.lexemes.pop(0))
-
         self.res += print_end
 
         self.match(CLOSE)
