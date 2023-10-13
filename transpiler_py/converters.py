@@ -10,6 +10,9 @@ class Converter:
 
     def match(self, expected):
         raise NotImplementedError()
+    
+    def block(self):
+        raise NotImplementedError()
 
     def default_function_call(self, arg: str) -> None:
         raise NotImplementedError()
@@ -81,3 +84,15 @@ class Converter:
         self.match(END_INSTRUCTION)
         self.lexemes.pop(0)
         self.res += '\n' + '\t'*self.current_identation
+
+    def convert_main(self):
+        self.res += 'if __name__ == "__main__":\n'
+        # python driver function does not suport params,
+        # here i'm throwing away "()"
+        self.match(OPEN)
+        self.lexemes.pop(0) # throw "(" away
+
+        self.match(CLOSE)
+        self.lexemes.pop(0) # throw ")" away
+
+        return self.block()
