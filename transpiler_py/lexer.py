@@ -8,40 +8,63 @@ class Lexer:
 
     def get_char(self):
         self.char = self.source.read(1)
+        
 
-    def return_char(self):
-        self.source.seek(self.source.tell() - 1)
+    def return_char(self, i=1):
+        self.source.seek(self.source.tell() - i)
 
     def tokenize(self):
-        self.get_char()
+        self.char = " " # This char will be ignored
     
         while self.char != "":
-            if self.skip_space(): continue
+            self.get_char()
+
+            if self.skipable(): continue
             if self.include(): continue
             if self.opening(): continue
             if self.closing(): continue
             if self.separator(): continue
             if self.block_start(): continue
-            if self.end_instruction(): continue
             if self.block_end(): continue
-            if self.comparison(): continue
-            if self.assignment(): continue
+            if self.end_instruction(): continue
+            if self.comparison_and_assignment(): continue
             if self.digit(): continue
             if self.string(): continue
             self.identifier()
 
+    def include(self):
+        """
+        # include {<|"} [a-zA-Z]+ .h {>|"}
+        """
+        if self.char == "#": # #
+            include_body = self.source.read(7)
+            self.char = include_body[-1]
+
+            if include_body != "include": # include
+                raise SyntaxError(f"{include_body} is not a valid token")
+            
+            self.get_char()
+            while self.char == " ": # skip one or more whitespaces
+                self.get_char()
+
+            if self.char not in ['<', '"']: # {<|"}
+                raise SyntaxError(f"Invalid include")
+            
             self.get_char()
 
-    def include(self):
-        if self.char == "#":
-            include_body = ""
-
-            while self.char != ">":
-                include_body += self.char
+            while self.char.isalpha(): # [a-zA-Z]+
                 self.get_char()
 
             self.return_char()
+
+            if self.source.read(2) != ".h": # .h
+                raise SyntaxError(f"Invalid include")
+            
             self.get_char()
+
+            if self.char not in ['"', '>']: # {>|"}
+                raise SyntaxError(f"Invalid include")
+            
             self.look_ahead.append(INCLUDE)
             return True
 
@@ -49,32 +72,37 @@ class Lexer:
         if self.char == ',':
             self.look_ahead.append(SEPARATOR)
             self.lexemes.append(self.char)
-            self.get_char()
             return True
 
     def string(self):
-        if self.char == '"':
+        """
+        " [ASCII]+ "
+        """
+        if self.char == '"': # "
             self.lexemes.append(self.char)
             self.look_ahead.append(OPEN_STRING)
 
             string_body = ''
             self.get_char()
 
-            while self.char != '"':
+            while self.char != '"': # ASCII+ "
                 string_body += self.char
                 self.get_char()
 
             self.look_ahead.append(ASCII)
             self.lexemes.append(string_body)
+
             self.look_ahead.append(CLOSE_STRING)
             self.lexemes.append(self.char)
-            self.get_char()
+
             return True
 
     def is_type(self, lexeme: str) -> bool:
+        """ [ int | char | void ]"""
         return lexeme in ['int', 'char', 'void']
 
     def keyword(self, lexeme: str):
+        """ [ if | else ]"""
         if lexeme == 'if':
             self.look_ahead.append(IF)
             return True
@@ -89,81 +117,81 @@ class Lexer:
         if self.char == ';':
             self.lexemes.append(self.char)
             self.look_ahead.append(END_INSTRUCTION)
-            self.get_char()
             return True
 
     def assignment(self):
         if self.char == '=':
             self.lexemes.append(self.char)
             self.look_ahead.append(ASSIGNMENT)
-            self.get_char()
             return True
 
     def digit(self):
-        if self.char.isdigit():
+        """
+        [0-9]+
+        """
+        if self.char.isdigit(): # [0-9]
             lex = ""
 
-            while self.char.isdigit():
+            while self.char.isdigit(): # [0-9]+
                 lex += self.char
                 self.get_char()
 
             self.return_char()
-            self.get_char()
             self.lexemes.append(lex)
             self.look_ahead.append(DIGIT)
-
             return True
 
     def block_start(self):
         if self.char == '{':
             self.lexemes.append(self.char)
             self.look_ahead.append(BLOCK_OPEN)
-            self.get_char()
             return True
     
     def block_end(self):
         if self.char == '}':
             self.lexemes.append(self.char)
             self.look_ahead.append(BLOCK_CLOSE)
-            self.get_char()
             return True
 
     def opening(self):
         if self.char == '(':
             self.lexemes.append(self.char)
             self.look_ahead.append(OPEN)
-            self.get_char()
             return True
 
     def closing(self):
         if self.char == ')':
             self.lexemes.append(self.char)
             self.look_ahead.append(CLOSE)
-            self.get_char()
             return True
 
-    def comparison(self):
+    def comparison_and_assignment(self):
         """
-        COMPARISON -> {=|!} =
+        COMPARISON -> [!|<|>|=] =
+        ASSIGNMENT -> =
         """
-        if self.char in ['!', "<", ">", "="]:
-            lex: str = self.char
+        if self.char in ['!', "<", ">", "="]: # [!|<|>|=]
+            lex = self.char
             self.get_char()
             
-            if self.char == "=":
+            if self.char == "=": # =
                 self.look_ahead.append(COMPARISON)
-                self.lexemes.append(lex + self.char)
-                self.get_char()
-                return True
-
-            self.return_char()
-            self.return_char()
-            self.get_char()
+                self.lexemes.append(lex + "=")
+            
+            else: 
+                self.return_char()
+                self.look_ahead.append(ASSIGNMENT)
+                self.lexemes.append("=")
+            
+            return True
 
     def identifier(self):
-        if self.char.isalpha():
+        """
+        [a-zA-Z] [a-zA-Z0-9]+
+        """
+        if self.char.isalpha(): # [a-zA-Z]
             lex = ""
-            while self.char.isalnum():
+            while self.char.isalnum(): # [a-zA-Z0-9]+
                 lex += self.char
                 self.get_char()
 
@@ -174,10 +202,11 @@ class Lexer:
                 self.look_ahead.append(TYPE)
                 return
             
-            if self.keyword(lex): return
+            if self.keyword(lex): 
+                return
 
             self.look_ahead.append(IDENTIFIER)
 
-    def skip_space(self):
-        if self.char == ' ':
-            self.get_char()
+    def skipable(self):
+        if self.char in [' ', '\n', '\t']:
+            return True

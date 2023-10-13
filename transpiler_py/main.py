@@ -51,6 +51,7 @@ def main() -> None:
     lexer.tokenize()
     
     print(lexer.lexemes)
+    print(lexer.look_ahead)
 
     parser: Parser = Parser(lexer.lexemes, lexer.look_ahead)
     parser.parse()
