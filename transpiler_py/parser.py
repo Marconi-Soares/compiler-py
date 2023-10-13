@@ -59,11 +59,16 @@ class Parser(Converter):
         self.res += '\n' + '\t'*self.current_identation    
 
     def variable_definition(self):
-        self.match(TYPE)
-        variable_type = self.convert_type()
+        if self.look_ahead[0] == TYPE:
+            self.match(TYPE)
+            variable_type = self.convert_type()
 
-        self.match(IDENTIFIER)
-        self.res+= self.lexemes.pop(0) + f": {variable_type}"
+            self.match(IDENTIFIER)
+            self.res+= self.lexemes.pop(0) + f": {variable_type}"
+
+        else:
+            self.match(IDENTIFIER)
+            self.res += self.lexemes.pop(0)
 
         self.match(ASSIGNMENT)
         self.res+= ' ' + self.lexemes.pop(0) + ' '
@@ -189,8 +194,14 @@ class Parser(Converter):
         if self.look_ahead[0] == TYPE:
             self.variable_definition()
 
-        elif self.look_ahead[0] == IDENTIFIER: 
+        elif self.look_ahead[0] == IDENTIFIER and self.look_ahead[1] == OPEN: 
             self.function_call()
+
+        elif (
+            self.look_ahead[0] == IDENTIFIER 
+            and self.look_ahead[1] == ASSIGNMENT
+        ):
+            self.variable_definition()
 
         elif self.look_ahead[0] == IF:
             self.if_definition()
