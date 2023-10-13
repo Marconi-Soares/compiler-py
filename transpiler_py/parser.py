@@ -39,7 +39,7 @@ class Parser(Converter):
 
     def default_function_call(self, function_identifier):
         """
-        function_call -> identifier OPEN {params+} CLOSE END_INSTRUCTION
+        function_call -> identifier OPEN {params+} CLOSE
         """
         self.res += function_identifier
 
@@ -51,10 +51,6 @@ class Parser(Converter):
 
         self.match(CLOSE)
         self.res += self.lexemes.pop(0)
-
-        self.match(END_INSTRUCTION)
-        self.lexemes.pop(0) # throw ';' away
-        self.res += '\n' + '\t'*self.current_identation    
 
     def variable_definition(self):
         """
@@ -91,14 +87,11 @@ class Parser(Converter):
             self.match(DIGIT)
             self.res+= self.lexemes.pop(0)
 
-        self.match(END_INSTRUCTION)
-        self.lexemes.pop(0) # Throw ';' away
-        self.res+= '\n' + '\t'*self.current_identation
-
     def function_definition(self):
         """
         function_definition -> TYPE IDENTIFIER OPEN {params} CLOSE block 
         """
+
         self.match(TYPE)
         return_type = self.convert_type()
 
@@ -107,6 +100,9 @@ class Parser(Converter):
 
         if function_identifier == "main":
             self.convert_main()
+
+        # add a breakline if it is not the first function in the program
+        if len(self.res) != 0: self.res += "\n" 
 
         self.match(OPEN)
         self.res += f'def {function_identifier}{self.lexemes.pop(0)}' # def identifier(
@@ -123,6 +119,7 @@ class Parser(Converter):
         """
         if_definition -> IF OPEN IDENTIFIER COMPARISON IDENTIFIER CLOSE  [block | instruction]
         """
+
         self.match(IF)
         self.res += self.lexemes.pop(0)
         
@@ -141,12 +138,13 @@ class Parser(Converter):
 
         self.match(CLOSE)
         self.lexemes.pop(0) # Throw ")" away
-        self.res += ":\n" + "\t"*self.current_identation
+        self.res += ":\n"
 
         # [block | instruction]
         if self.look_ahead[0] != BLOCK_OPEN:             
-            self.res += "\t" # add an identation
+            self.current_identation += 1
             self.instruction()
+            self.current_identation -= 1
             return
 
         self.block()
@@ -155,6 +153,7 @@ class Parser(Converter):
         """
         else_definition -> ELSE [if_definition | instruction | block]
         """
+        self.res += "\n" + "\t"*self.current_identation # add a breakline before an if statement
         self.match(ELSE)
         else_body = self.lexemes.pop(0)
         
@@ -163,11 +162,12 @@ class Parser(Converter):
             self.if_definition()
             return
         
-        self.res += else_body + ":\n" + "\t"*self.current_identation
+        self.res += else_body + ":\n"
 
         if self.look_ahead[0] != BLOCK_OPEN:
-            self.res += "\t" # add an identation
+            self.current_identation += 1
             self.instruction()
+            self.current_identation -= 1
             return
 
         self.block()
@@ -178,7 +178,6 @@ class Parser(Converter):
         """
         self.match(BLOCK_OPEN)
         self.lexemes.pop(0) # throw '{' away
-        self.res += "\t"
         self.current_identation += 1
         
         if self.look_ahead[0] != BLOCK_CLOSE: # {instruction+}
@@ -187,7 +186,6 @@ class Parser(Converter):
         self.match(BLOCK_CLOSE)
         self.current_identation -= 1
         self.lexemes.pop(0) # throw '}' away
-        self.res += '\n' + "\t"*self.current_identation
 
 
     def instructions(self):
@@ -199,11 +197,10 @@ class Parser(Converter):
 
     def instruction(self):
         """
-        instruction -> variable_definition 
-                       | function_call 
-                       | if_definition
-                       | else_definition
+        instruction -> [variable_definition | function_call | if_definition | else_definition]
+                       END_INSTRUCTION
         """
+        self.res += "\t"*self.current_identation
         if self.look_ahead[0] == TYPE:
             self.variable_definition()
 
@@ -217,10 +214,17 @@ class Parser(Converter):
             self.variable_definition()
 
         elif self.look_ahead[0] == IF:
+            self.res += "\n" + "\t"*self.current_identation # add a breakline before an if statement
             self.if_definition()
+            return
 
         elif self.look_ahead[0] == ELSE:
             self.else_definition()
+            return
+
+        self.match(END_INSTRUCTION)
+        self.lexemes.pop(0) # throw ';' away
+        self.res += '\n'
 
     def params(self):
         while self.look_ahead[0] in [TYPE, IDENTIFIER]:

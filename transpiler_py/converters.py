@@ -81,11 +81,8 @@ class Converter:
         self.match(CLOSE)
         self.res += self.lexemes.pop(0)
 
-        self.match(END_INSTRUCTION)
-        self.lexemes.pop(0)
-        self.res += '\n' + '\t'*self.current_identation
-
     def convert_main(self):
+        self.res += "\n\n"
         self.res += 'if __name__ == "__main__":\n'
         # python driver function does not suport params,
         # here i'm throwing away "()"
