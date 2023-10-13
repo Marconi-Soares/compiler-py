@@ -52,6 +52,23 @@ class Parser(Converter):
         self.match(CLOSE)
         self.res += self.lexemes.pop(0)
 
+    def return_definition(self):
+        """
+        return_definition -> RETURN {DIGIT | IDENTIFIER}
+        """
+        self.match(RETURN)
+        self.res += self.lexemes.pop(0) + " "
+        
+        if self.look_ahead[0] == DIGIT:
+            self.match(DIGIT)
+            self.res += self.lexemes.pop(0)
+            return 
+        
+        if self.look_ahead[0] == IDENTIFIER:
+            self.match(IDENTIFIER)
+            self.res += self.lexemes.pop(0)
+            return
+
     def variable_definition(self):
         """
         variable_definition -> {TYPE} IDENTIFIER ASSIGNMENT [DIGIT | STRING]
@@ -192,17 +209,26 @@ class Parser(Converter):
         """
         instructions -> {instruction+}
         """
-        while self.look_ahead[0] in [TYPE, IDENTIFIER, IF, ELSE]: # {instruction+}
+        while self.look_ahead[0] in [TYPE, IDENTIFIER, IF, ELSE, RETURN]: # {instruction+}
             self.instruction()
 
     def instruction(self):
         """
-        instruction -> [variable_definition | function_call | if_definition | else_definition]
+        instruction -> [
+              variable_definition 
+            | function_call 
+            | if_definition 
+            | else_definition
+            | RETURN
+        ]
                        END_INSTRUCTION
         """
         self.res += "\t"*self.current_identation
         if self.look_ahead[0] == TYPE:
             self.variable_definition()
+
+        elif self.look_ahead[0] == RETURN:
+            self.return_definition()
 
         elif self.look_ahead[0] == IDENTIFIER and self.look_ahead[1] == OPEN: 
             self.function_call()

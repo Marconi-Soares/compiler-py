@@ -102,16 +102,22 @@ class Lexer:
         return lexeme in ['int', 'char', 'void']
 
     def keyword(self, lexeme: str):
-        """ [ if | else ]"""
-        if lexeme == 'if':
-            self.look_ahead.append(IF)
-            return True
-
-        elif lexeme == 'else':
-            self.look_ahead.append(ELSE)
-            return True
-
-        return False
+        """ [ if | else | return ]"""
+        match lexeme:
+            case 'if':
+                self.look_ahead.append(IF)
+                return True
+            
+            case 'else':
+                self.look_ahead.append(ELSE)
+                return True
+            
+            case 'return':
+                self.look_ahead.append(RETURN)
+                return True
+            
+            case _:
+                return False
 
     def end_instruction(self):
         if self.char == ';':
@@ -204,6 +210,7 @@ class Lexer:
             
             if self.keyword(lex): 
                 return
+
 
             self.look_ahead.append(IDENTIFIER)
 
