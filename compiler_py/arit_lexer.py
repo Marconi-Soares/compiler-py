@@ -1,6 +1,8 @@
 from string import ascii_letters
+from tokens import TOKENS
 from errorcpl import exit_error
 from wrt_log import TraceFile
+from keywords import KEYWORDS, is_keyword
 
 
 NUMBERS = '0123456789.'
@@ -28,69 +30,156 @@ class Lexer:
     def __init__(self, filepath):
         TraceFile.write_log(filepath, 'Lexer __init__')
          
-        self.file_stream = open(filepath, 'r')
+        self.lex_tape = open(filepath, 'r')
         self.tokens = []
         self.lex_lvl = 0
         self.char = ""
         self.symtab = []
-        self.lex_tape = []
+        self.lexeme = ""
+        self.look_ahead = ''
+        self.line_number = 0
 
-        # while len(self.source) > 0:
-        #     self.char = self.source.pop(0)
+    def match(self, expected):
+        if self.look_ahead == expected:
+            self.look_ahead = self.get_token()
+        
 
-        #     if self.char == " \n\t\r":
-        #         continue
 
-        # self.append_entries()
-    
-    # id = [a-Z] [0-9 a-Z]
+
     def isID(self):
-        i = 0
-        lexeme: list[str] = []
-        lexeme[i] = self.get_char()
+        self.lexeme = ""
+        self.lexeme += self.get_char()
 
-        if lexeme[i].isalpha():
-            i += 1
-            lexeme[i] = self.get_char()
-            while lexeme[i].isalnum():
-                i += 1
-                lexeme[i] = self.get_char()
+        if self.lexeme.isalpha():
+            char = self.get_char()
+            while char.isalnum():
+                self.lexeme += char
+                char = self.get_char()
 
             self.unget_char()
-            i = self.is_keyword(lexeme)
-            if not i:
-                return i
+            symbol = is_keyword(self.lexeme)
+
+            if symbol:
+                return symbol
 
             return IDENTIFIER
         
         self.unget_char()
         return False
 
-    def unget_char(self):
-        self.file_stream.seek(self.file_stream.tell() -1)
+    def unget_char(self, i=1):
+        self.lex_tape.seek(self.lex_tape.tell() -i)
 
     def get_char(self):
-        return self.file_stream.read(1)
+        return self.lex_tape.read(1)
     
-    def is_keyword(self, lexeme):
-        pass
+   # floating = UINT ('.' digit* enotation? | enotation) | '.' digit+ enotation?
+    def isINT(self):
+        self.lexeme = self.get_char()
 
-    # floating = UINT ('.' digit* enotation? | enotation) | '.' digit+ enotation?
+        if self.lexeme.isdigit():
+            if self.lexeme == '0':
+                return KEYWORDS['INT']
+
+            char = self.get_char()
+            while char.isdigit():
+                self.lexeme += char
+                char = self.get_char()
+
+            self.unget_char()
+            return KEYWORDS['INT']
+
+        self.unget_char()
+        return False
+                
     def isNUM(self):
-        pass
-    
+        if self.isINT():
+            self.lexeme += self.get_char()
+            if self.lexeme == '.':
+                char = self.get_char()
+                while char.isdigit():
+                    self.lexeme += char
+                    char = self.get_char()
+
+                self.unget_char()
+                return KEYWORDS["FLOAT"]
+
+            self.unget_char()
+            return KEYWORDS['INT']
+            
+        if self.lexeme == '.':
+            char = self.get_char()
+            if char.isdigit():
+                while char.isdigit():
+                    self.lexeme += char
+                    char = self.get_char()
+                
+                self.unget_char()
+                return KEYWORDS["FLOAT"]
+
+            self.unget_char(2)
+            return False
+
+        self.unget_char()
+        return False
+
     def isRELOP(self):
-        pass
+        self.lexeme = self.get_char()
+
+        match self.lexeme:
+            case "<":
+                self.lexeme += self.get_char()
+                if self.lexeme == '<=':
+                    return TOKENS['LEQ']
+                self.unget_char()
+                return TOKENS['LT']
+
+            case ">":
+                self.lexeme += self.get_char()
+                if self.lexeme == '>=':
+                    return TOKENS['GEQ']
+                self.unget_char()
+                return TOKENS['GT']
+
+            case "=":
+                self.lexeme += self.get_char()
+                if self.lexeme == '==':
+                    return TOKENS['EQ']
+                self.unget_char(2)
+
+            case "!":
+                self.lexeme += self.get_char()
+                if self.lexeme == '!=':
+                    return TOKENS['NEQ']
+                self.unget_char(2)
+
+            case _:
+                self.unget_char()
+        
 
     def isADD(self):
-        pass
+        self.lexeme = self.get_char()
+        if self.lexeme in '+-':
+            return ADDOP
+
+        self.unget_char()
+        return False
 
     def isMUL(self):
-        pass
+        self.lexeme = self.get_char()
+        if self.lexeme in '/*':
+            return MULOP
+
+        self.unget_char()
+        return False
 
     def isASGNM(self):
-        pass
+        self.lexeme = self.get_char()
+        if self.lexeme in '=':
+            return ASSIGNMENT
 
+        self.unget_char()
+        return False
 
     def get_token(self):
         # self.skipspaces()
@@ -112,8 +201,29 @@ class Lexer:
 
         elif token := self.isASGNM():
             return token
+    # ~^ ^~
+    def skip_comments(self):
+        char = self.get_char()
+        if char == '~':
+            char = self.get_char()
+            if char == '^':
+                char = self.get_char()
+                while char != "^":
+                    char = self.get_char()
+                    if char == '^':
+                        char = self.get_char()
+                        if char == '~':
+                            return
+ 
+    def skip_spaces(self):
+        char = self.get_char()
+        while char.isspace():
+            char = self.get_char()
+            if char == '\n':
+                self.line_number += 1
 
-
+        self.unget_char()
+        self.skip_comments()
 
     def append_entries(self):
         # global LEX_LVL
@@ -181,16 +291,16 @@ class Lexer:
 
     def get_sequence(self, token_type):
         # i = 0;
-        # lexeme[i] = toupper(getc(tape));
-        # if (isalpha(lexeme[i])) {
-        #     while (isalnum(lexeme[++i] = toupper(getc(tape))));
-        #     ungetc(lexeme[i], tape);
-        #     lexeme[i] = 0;
-        #     if ( (i = iskeyword(lexeme)) )
+        # self.lexeme[i] = toupper(getc(tape));
+        # if (isalpha(self.lexeme[i])) {
+        #     while (isalnum(self.lexeme[++i] = toupper(getc(tape))));
+        #     ungetc(self.lexeme[i], tape);
+        #     self.lexeme[i] = 0;
+        #     if ( (i = iskeyword(self.lexeme)) )
         #         return i;
         #     return ID;
         # }
-        # ungetc(lexeme[i], tape);
+        # ungetc(self.lexeme[i], tape);
         TraceFile.write_log(self.char, 'get_sequence')
         
         seq = self.char

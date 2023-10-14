@@ -1289,3 +1289,15 @@ ENDP
 a = 1+2*4
 ENDP
 
+[2023-10-13 23:21:23.617699]Lexer __init__: input.txt
+[2023-10-13 23:21:23.618185]__main__: 
+[2023-10-13 23:22:59.299664]Lexer __init__: input.txt
+[2023-10-13 23:22:59.299862]__main__: 
+[2023-10-13 23:32:35.829694]Lexer __init__: input.txt
+[2023-10-13 23:32:54.962098]Lexer __init__: input.txt
+[2023-10-13 23:33:06.124603]Lexer __init__: input.txt
+[2023-10-13 23:42:47.440842]Lexer __init__: input.txt
+[2023-10-13 23:48:34.306051]Lexer __init__: input.txt
+[2023-10-13 23:48:42.720809]Lexer __init__: input.txt
+[2023-10-13 23:50:24.011845]Lexer __init__: input.txt
+[2023-10-13 23:51:21.931935]Lexer __init__: input.txt

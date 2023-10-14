@@ -1,4 +1,4 @@
-from import Lexer
+from arit_lexer import Lexer
 from wrt_log import TraceFile
 import arit_parser
 import sys
@@ -25,9 +25,12 @@ if __name__ == '__main__':
 
     
     lexer = Lexer(args.filename)
-    lexer.generate_token_code()
-    TraceFile.write_log(msg=str(lexer.token_code), fnc="__main__")
-    parser = arit_parser.Parser(lexer.token_code, lexer)
+    # lexer.generate_token_code()
+    lexer.look_ahead = lexer.get_token()
+
+    # TraceFile.write_log(msg=str(lexer.token_code), fnc="__main__")
+    parser = arit_parser.Parser(lexer)
+    parser.program()
 
     with open(args.output, 'w') as fo:
         contents = fo.write(parser.output)
